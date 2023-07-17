@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="style.css">
+	<script type = "text/javascript">  
+
+		function page_redirect(){  
+		window.location = "index.html"; 
+		alert("Your Email has been registered!"); 
+		} 
+		</script> 
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html" class="active">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+
+	<main>
+		<section class="contact-us">
+			<h2>Contact Us</h2>
+			<form action="submit.php" method="post">
+				<label for="name" style="display: block;">Name:</label>
+				<input type="text" id="name" name="name" required>
+		
+				<label for="email" style="display: block;">Email:</label>
+				<input type="email" id="email" name="email" required>
+		
+				<label for="message" style="display: block;">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+		
+				<input type = "button" value = "Submit" onclick = "page_redirect()" />  
+			</form>
+		</section>
+		
+		</main>
+		<footer>
+			<div class="footer-info">
+				<p>Zara Women's Clothing</p>
+				<p>27, Coxwell Ave, Toronto- M4C5L8</p>
+				<p>Phone: 416-828-0001</p>
+				<p>Email: info@zarawomensclothing.com</p>
+			</div>
+		</footer>
+
+	</body>
+	</html>
+	
